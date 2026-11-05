@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avery Lindqvist — Director of Operations</title>
+<meta name="description" content="Avery Lindqvist, Director of Operations in Indianapolis, IN. Operations leader with 14 years across logistics, healthcare services, and consumer goods.">
+<style>
+  :root{
+    --navy:#13315c;
+    --navy-deep:#0a1f3d;
+    --navy-light:#a9c4e4;
+    --ink:#16202e;
+    --ink-soft:#49566b;
+    --ink-faint:#6f7c90;
+    --paper:#ffffff;
+    --tint:#f2f6fb;
+    --rule:#e0e6ef;
+    --maxw:860px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--navy);text-decoration:none;border-bottom:1px solid rgba(19,49,92,.3)}
+  a:hover{color:var(--navy-deep);border-bottom-color:var(--navy-deep)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* ---------- Header ---------- */
+  header{
+    background:var(--navy);
+    color:#fff;
+    padding:64px 0 52px;
+  }
+  .name{
+    margin:0;
+    font-size:clamp(2.1rem,6vw,3.1rem);
+    line-height:1.1;
+    letter-spacing:-.02em;
+    font-weight:700;
+    color:#fff;
+  }
+  .role{
+    margin:10px 0 0;
+    font-size:clamp(1.05rem,2.6vw,1.3rem);
+    color:var(--navy-light);
+    font-weight:600;
+    letter-spacing:.01em;
+  }
+  .meta{
+    margin:24px 0 0;
+    padding:0;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 22px;
+    font-size:.95rem;
+    color:rgba(255,255,255,.88);
+  }
+  .meta li{display:flex;align-items:center;gap:9px}
+  .meta a{color:#fff;border-bottom-color:rgba(255,255,255,.45)}
+  .meta a:hover{color:#fff;border-bottom-color:#fff}
+  .meta svg{flex:none;width:16px;height:16px;fill:none;stroke:var(--navy-light);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- Sections ---------- */
+  section{padding:52px 0}
+  section + section{border-top:1px solid var(--rule)}
+  h2{
+    margin:0 0 26px;
+    font-size:.82rem;
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    color:var(--ink-faint);
+    font-weight:700;
+  }
+  h2::after{
+    content:"";
+    display:block;
+    width:34px;
+    height:3px;
+    background:var(--navy);
+    margin-top:10px;
+  }
+  .lede{margin:0;font-size:1.12rem;line-height:1.7;color:var(--ink-soft)}
+
+  /* ---------- Career highlights ---------- */
+  #highlights{background:var(--tint)}
+  #highlights h2::after{background:var(--navy)}
+  .highlights{display:flex;flex-wrap:wrap;gap:16px;margin:0;padding:0;list-style:none}
+  .highlight{
+    flex:1 1 220px;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--navy);
+    border-radius:8px;
+    padding:22px 20px 24px;
+  }
+  .highlight .stat{
+    display:block;
+    font-size:2rem;
+    line-height:1.1;
+    font-weight:700;
+    color:var(--navy);
+    letter-spacing:-.02em;
+  }
+  .highlight .what{display:block;margin-top:10px;font-weight:600;font-size:1rem;line-height:1.45}
+  .highlight .where{display:block;margin-top:8px;font-size:.9rem;color:var(--ink-faint);line-height:1.5}
+
+  /* ---------- Experience ---------- */
+  .job{padding-left:22px;border-left:2px solid var(--rule);position:relative}
+  .job + .job{margin-top:38px}
+  .job::before{
+    content:"";position:absolute;left:-7px;top:9px;
+    width:12px;height:12px;border-radius:50%;
+    background:var(--navy);border:3px solid var(--paper);
+  }
+  .job-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 18px}
+  .job-title{margin:0;font-size:1.12rem;font-weight:700;line-height:1.35}
+  .job-org{margin:2px 0 0;color:var(--ink-soft);font-size:.98rem}
+  .job-dates{
+    font-size:.82rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--navy);white-space:nowrap;
+  }
+  .job ul{margin:14px 0 0;padding-left:20px}
+  .job li{margin-bottom:8px;color:var(--ink-soft)}
+  .job li::marker{color:var(--navy)}
+
+  /* ---------- Education ---------- */
+  .edu{margin:0;padding:0;list-style:none}
+  .edu li{padding:16px 0;border-bottom:1px solid var(--rule)}
+  .edu li:first-child{padding-top:0}
+  .edu li:last-child{border-bottom:0;padding-bottom:0}
+  .edu strong{display:block;font-size:1.04rem}
+  .edu span{color:var(--ink-faint);font-size:.95rem}
+
+  /* ---------- Skills ---------- */
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+  .tags li{
+    background:var(--tint);
+    border:1px solid var(--rule);
+    border-radius:999px;
+    padding:7px 16px;
+    font-size:.93rem;
+    color:var(--ink-soft);
+  }
+  .subhead{
+    margin:34px 0 14px;font-size:.8rem;text-transform:uppercase;
+    letter-spacing:.13em;color:var(--ink-faint);font-weight:700;
+  }
+  .plain{margin:0;padding:0;list-style:none;color:var(--ink-soft)}
+  .plain li{padding:7px 0 7px 20px;position:relative}
+  .plain li::before{
+    content:"";position:absolute;left:0;top:17px;
+    width:7px;height:7px;background:var(--navy);border-radius:50%;
+  }
+
+  /* ---------- Contact ---------- */
+  #contact{background:var(--navy);color:#fff;border-top:0}
+  #contact h2{color:var(--navy-light)}
+  #contact h2::after{background:var(--navy-light)}
+  .contact-grid{display:flex;flex-wrap:wrap;gap:14px;margin-top:4px}
+  .card{
+    flex:1 1 200px;
+    display:flex;align-items:center;gap:14px;
+    background:var(--paper);
+    border:1px solid transparent;
+    border-radius:10px;
+    padding:18px 20px;
+    text-decoration:none;
+    color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .card.wide{flex:1.6 1 290px}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.22);color:var(--navy-deep)}
+  .card svg{flex:none;width:22px;height:22px;fill:none;stroke:var(--navy);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .card .label{display:block;font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-faint);font-weight:700}
+  .card .value{display:block;font-size:1.02rem;font-weight:600;word-break:break-word}
+
+  footer{padding:28px 0 40px;font-size:.88rem;color:var(--ink-faint);text-align:center}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:640px){
+    body{font-size:16px}
+    header{padding:44px 0 36px}
+    section{padding:40px 0}
+    .job-dates{font-size:.78rem}
+    .meta{gap:8px 0;flex-direction:column}
+    .highlight .stat{font-size:1.75rem}
+  }
+  @media print{
+    body{background:#fff;font-size:11pt;color:#000}
+    header,#contact{background:#fff;color:#000}
+    .name,.meta,.meta a{color:#000}
+    .role,#contact h2{color:var(--navy)}
+    .meta svg{stroke:var(--navy)}
+    #highlights{background:#fff}
+    .card{border-color:var(--rule);break-inside:avoid}
+    .highlight{break-inside:avoid}
+    section{padding:18px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1 class="name">Avery Lindqvist</h1>
+    <p class="role">Director of Operations</p>
+    <ul class="meta">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        Indianapolis, IN
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+        <a href="mailto:avery.lindqvist@example.com">avery.lindqvist@example.com</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2.5 2.5 0 0 1-2.8 2.5A17 17 0 0 1 3.5 5.8 2.5 2.5 0 0 1 6 3z"/></svg>
+        <a href="tel:+13175550142">(317) 555-0142</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap">
+      <h2>Introduction</h2>
+      <p class="lede">Operations leader with 14 years across logistics, healthcare services, and consumer goods. Built and ran a 120-person regional operations team, cut order-to-delivery time 31% at Northwind Logistics, and led a $9M warehouse-automation program that finished on time and under budget. Known for calm execution, plain-English dashboards, and teams that stay.</p>
+    </div>
+  </section>
+
+  <section id="highlights">
+    <div class="wrap">
+      <h2>Career highlights</h2>
+      <ul class="highlights">
+        <li class="highlight">
+          <span class="stat">31% faster</span>
+          <span class="what">Cut order-to-delivery time from 3.2 to 2.2 days</span>
+          <span class="where">Northwind Logistics &mdash; by redesigning pick paths and shift handoffs</span>
+        </li>
+        <li class="highlight">
+          <span class="stat">$9M</span>
+          <span class="what">Automation program delivered in 14 months, on time and 6% under budget</span>
+          <span class="where">Northwind Logistics &mdash; zero lost-time injuries during rollout</span>
+        </li>
+        <li class="highlight">
+          <span class="stat">40% fewer</span>
+          <span class="what">Peak-season stockouts after building the S&amp;OP process</span>
+          <span class="where">Cascade Outdoor Co. &mdash; sales-and-operations planning</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <div class="job-head">
+          <h3 class="job-title">Director of Operations</h3>
+          <span class="job-dates">2021 &ndash; Present</span>
+        </div>
+        <p class="job-org">Northwind Logistics &middot; Indianapolis, IN</p>
+        <ul>
+          <li>Run regional operations for three distribution centers: 120 people and a $48M operating budget.</li>
+          <li>Cut order-to-delivery time from 3.2 to 2.2 days by redesigning pick paths and shift handoffs.</li>
+          <li>Led the $9M automation program: 14 months, on time, 6% under budget, zero lost-time injuries during rollout.</li>
+          <li>Built the weekly operations dashboard the leadership team now runs its Monday meeting from.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3 class="job-title">Senior Operations Manager</h3>
+          <span class="job-dates">2017 &ndash; 2021</span>
+        </div>
+        <p class="job-org">Meridian Health Partners &middot; Carmel, IN</p>
+        <ul>
+          <li>Managed patient logistics and supply operations for 11 outpatient clinics.</li>
+          <li>Reduced supply spend 12% through vendor consolidation; introduced par-level inventory at every site.</li>
+          <li>Led the 2020 shift to curbside and telehealth logistics in six weeks.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <h3 class="job-title">Operations Analyst, promoted to Operations Manager (2015)</h3>
+          <span class="job-dates">2012 &ndash; 2017</span>
+        </div>
+        <p class="job-org">Cascade Outdoor Co. &middot; Portland, OR</p>
+        <ul>
+          <li>Started in demand planning; ran the returns and refurbishment program ($4M a year) for the final two years.</li>
+          <li>Built the sales-and-operations planning process that cut peak-season stockouts 40%.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <strong>MBA, Kelley School of Business, Indiana University</strong>
+          <span>2019 &middot; Evening MBA</span>
+        </li>
+        <li>
+          <strong>B.S. Industrial Engineering, Purdue University</strong>
+          <span>2012</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>Lean and Six Sigma (Black Belt)</li>
+        <li>Sales and operations planning</li>
+        <li>Warehouse automation</li>
+        <li>P&amp;L ownership</li>
+        <li>Vendor negotiation</li>
+        <li>SQL, Tableau, Power BI</li>
+        <li>Change management</li>
+      </ul>
+
+      <p class="subhead">Certifications and Community</p>
+      <ul class="plain">
+        <li>APICS Certified Supply Chain Professional (2018)</li>
+        <li>Board member, Central Indiana Food Rescue (2022 &ndash; present)</li>
+        <li>Volunteer youth soccer coach</li>
+      </ul>
+
+      <p class="subhead">Languages</p>
+      <ul class="plain">
+        <li>English (native)</li>
+        <li>Swedish (conversational)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <div class="contact-grid">
+        <a class="card wide" href="mailto:avery.lindqvist@example.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          <span>
+            <span class="label">Email</span>
+            <span class="value">avery.lindqvist@example.com</span>
+          </span>
+        </a>
+        <a class="card" href="tel:+13175550142">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2L21 14.5v3a2.5 2.5 0 0 1-2.8 2.5A17 17 0 0 1 3.5 5.8 2.5 2.5 0 0 1 6 3z"/></svg>
+          <span>
+            <span class="label">Phone</span>
+            <span class="value">(317) 555-0142</span>
+          </span>
+        </a>
+        <div class="card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span>
+            <span class="label">Based in</span>
+            <span class="value">Indianapolis, IN</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Avery Lindqvist &middot; Director of Operations &middot; Indianapolis, IN</div>
+</footer>
+
+</body>
+</html>
